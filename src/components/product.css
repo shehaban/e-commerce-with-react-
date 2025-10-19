@@ -1,0 +1,17 @@
+.fixed-card {
+  height: 400px;       /* ارتفاع ثابت لكل الكروت */
+  display: flex;
+  flex-direction: column;  /* لترتيب الصورة والنص بشكل عمودي */
+}
+
+.fixed-card img {
+  height: 200px;        /* نفس الارتفاع للصور */
+  object-fit: contain;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.fixed-card .card-body {
+  flex: 1;              /* يجعل النص يملأ باقي مساحة الكرت */
+  overflow: hidden;     /* لتجنب زيادة المحتوى عن الحد */
+}
